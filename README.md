@@ -1,15 +1,17 @@
-About nglview
-=============
+About nglview-meta
+==================
 
 Home: http://github.com/arose/nglview
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nglview-feedstock/blob/master/LICENSE.txt)
 
 Summary: An IPython widget to interactively view molecular structures and trajectories. Utilizes the embeddable NGL Viewer for rendering.
 
+Development: https://github.com/arose/nglview
 
+Documentation: https://arose.github.io/nglview/latest/
 
 Current build status
 ====================
@@ -30,20 +32,21 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-nglview-green.svg)](https://anaconda.org/conda-forge/nglview) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nglview.svg)](https://anaconda.org/conda-forge/nglview) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nglview.svg)](https://anaconda.org/conda-forge/nglview) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nglview.svg)](https://anaconda.org/conda-forge/nglview) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-nglview--js--widgets-green.svg)](https://anaconda.org/conda-forge/nglview-js-widgets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nglview-js-widgets.svg)](https://anaconda.org/conda-forge/nglview-js-widgets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nglview-js-widgets.svg)](https://anaconda.org/conda-forge/nglview-js-widgets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nglview-js-widgets.svg)](https://anaconda.org/conda-forge/nglview-js-widgets) |
 
-Installing nglview
-==================
+Installing nglview-meta
+=======================
 
-Installing `nglview` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `nglview-meta` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `nglview` can be installed with:
+Once the `conda-forge` channel has been enabled, `nglview, nglview-js-widgets` can be installed with:
 
 ```
-conda install nglview
+conda install nglview nglview-js-widgets
 ```
 
 It is possible to list all of the versions of `nglview` available on your platform with:
@@ -91,26 +94,26 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating nglview-feedstock
-==========================
+Updating nglview-meta-feedstock
+===============================
 
-If you would like to improve the nglview recipe or build a new
+If you would like to improve the nglview-meta recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/nglview-feedstock are
+Note that all branches in the conda-forge/nglview-meta-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
