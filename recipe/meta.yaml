@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install . --no-deps --ignore-installed
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -23,8 +23,6 @@ requirements:
     - jupyter-packaging
     - versioneer-518
     - nodejs
-    - notebook
-    - ipywidgets >=7
   run:
     - python >=3.6
     - numpy
